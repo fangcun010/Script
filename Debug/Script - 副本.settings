@@ -1,0 +1,33 @@
+@操作符的出现顺序作为操作符的识别ID从0开始
+@String表示字符串
+@Integer表示整型
+@Label表示标签
+LoadMap													@画地图
+Show 			String 									@显示图片bmp
+SetActor 		Integer,Integer,Integer					@设置角色位置到(x,y).
+Execute 		Integer,Integer,Integer					@执行当前层(x,y)的内容，比如打怪、对话、捡东西之类
+Monabl 			Integer,Integer,Integer,Integer,Integer,Integer										
+														@设置怪物能力为生命a,攻击b，防御c，经验d，金币e，
+SetAdd			Integer,Integer							@把宝物a加的数量设置为b.
+talk 			String,Integer,Integer,Integer			@第f层的(x,y)的NPC对话内容为w.
+Message 		String 									@显示字符串w
+SetDate 		Integer,Integer							@设置状态栏的坐标
+SetMap 			Integer,Integer							@设置地图显示的坐标
+
+
+@===============================================================
+@变量操作
+@===============================================================
+EQUAL			Integer,Integer							@变量赋值
+ADD				Integer,Integer							@加法
+SUB				Integer,Integer							@减法
+MUL				Integer,Integer							@乘法
+DIV				Integer,Integer							@除法
+
+@===============================================================
+@控制结构
+@===============================================================
+Goto			Label									@无条件跳转
+JPE				Integer,Integer,Label					@变量与数字相等跳转
+JPLE			Integer,Integer,Label					@变量与数字小于等于跳转
+IFMAPE			Integer,Integer,Integer,Integer,Label	@如果地图相等跳转

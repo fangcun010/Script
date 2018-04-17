@@ -1,0 +1,20 @@
+Start:							@脚本开始
+LoadMap							@显示地图
+
+
+IfMapE	0,1,2,5,IfLabel			@If map012==5
+GoTo	EndIfLabel				@message "我要打死你"
+IfLabel:
+	Message "我要打死你"
+EndIfLabel:
+
+
+Equal	10,0					@10号变量赋值为0
+								@verx=0
+L:
+JPLE	10,3,W1					@While verx<=3
+Goto	W2						
+W1:
+ADD		10,1					@verx+=1
+Goto	L
+W2:								@end

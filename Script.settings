@@ -1,0 +1,8 @@
+SetBackColor		integer,integer,integer			@设置背景色
+ShowMenu							@显示菜单
+AddMenuItem		String,String,integer,integer,Label		@添加菜单
+DebugPrint		String					@在控制台显示信息
+AddMenuImage		String,Integer,Integer				@添加菜单图片
+Test								@功能测试
+LoadMusic		String,Integer
+PlayMusic		Integer,Integer
